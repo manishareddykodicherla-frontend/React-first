@@ -3,6 +3,12 @@ import React from 'react'
 import Logo from '../assets/Library.svg'
 import {  faBars ,faCartShopping,faTimes } from '@fortawesome/free-solid-svg-icons';
 export default function Nav() {
+    function openMenu(){
+        document.body.classList+=" menu--open"
+    }
+     function closeMenu(){
+        document.body.classList.remove("menu--open")
+     }
   return (
     <div>
         <nav>
@@ -17,7 +23,7 @@ export default function Nav() {
          <li className="nav__list">
         <a href="/" className="nav__link"> Books</a>
         </li>
-        <button className="btn__menu">
+        <button className="btn__menu" onClick={openMenu}>
             <FontAwesomeIcon icon={faBars}>
             </FontAwesomeIcon>
         </button>
@@ -28,7 +34,7 @@ export default function Nav() {
         </li>
 </ul>
 <div className='menu__backdrop'>
-    <button className='btn__menu btn__menu--close'>
+    <button className='btn__menu btn__menu--close'onClick={closeMenu} >
         <FontAwesomeIcon icon={faTimes}></FontAwesomeIcon>
     </button>
     <ul className='menu__links'>

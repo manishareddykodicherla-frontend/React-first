@@ -16,7 +16,8 @@ export default function Featured() {
     {
         books.filter((book)=>book.rating===5) // filtering the book by rating 
         .slice(0,4) // by this we are looking for only four books
-        .map(book=>  <Book number={book}/>) // mapping each book with book component
+        .map(book=>  <Book book={book} />) // mapping each book with book component and also u need
+        //  to add key whenever u r mapping it to the 
     }
   
 </div>

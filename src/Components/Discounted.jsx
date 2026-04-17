@@ -1,8 +1,7 @@
 import React from 'react'
 import { books } from '../data'
 import Book from '../Components/UI/Book'
-
-export default function Discounted({ number}) {
+export default function Discounted( )  {
   return (
    <section id="recent">
     <div className="container">
@@ -10,11 +9,11 @@ export default function Discounted({ number}) {
             <h2>
                 Discount<span className="purple">Books</span>
             </h2>
-            <div classname="books">
+            <div className="books">
 {books
-.filter((number)=> number.salePrice>0)
+.filter((book)=>book.salePrice>0)
 .slice(0,8)
-.map((number)=><Book Key ={number.id}/>)}
+.map((book)=><Book book={book} />)}
             </div>
         </div>
     </div>
