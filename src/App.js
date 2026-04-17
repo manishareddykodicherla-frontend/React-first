@@ -6,11 +6,11 @@ import Books from './Pages/Books.jsx'
 function App() {
   return (
     <Router>
-   <div clasName="App">
+   <div className="App">
       <Nav/>
       <Switch >
       <Route path="/" exact component={Home}/> 
-      <Route path="/books" components={Books}/>
+      <Route path="/books" component={Books}/>
       </Switch>
       <Footer/>
     </div>

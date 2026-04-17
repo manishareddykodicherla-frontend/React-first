@@ -11,12 +11,12 @@ export default function Featured() {
 <section id="features">
     <div className="container">
         <div className='row'>
-<h2 classname="section__title">Featured<span className="purple">Books</span></h2>
+<h2 className="section__title">Featured<span className="purple">Books</span></h2>
 <div className="books">
     {
         books.filter((book)=>book.rating===5) // filtering the book by rating 
         .slice(0,4) // by this we are looking for only four books
-        .map(book=>  <Book book={book} />) // mapping each book with book component and also u need
+        .map(book=>  <Book book={book} key={book.id} />) // mapping each book with book component and also u need
         //  to add key whenever u r mapping it to the 
     }
   
