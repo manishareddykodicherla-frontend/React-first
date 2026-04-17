@@ -2,6 +2,7 @@ import React from 'react'
 
 export default function Books() {
   return (
+    <div>
     <div id ='books__body'>
         <main id="books__main">
             <section>
@@ -22,6 +23,7 @@ export default function Books() {
             </section>
 
         </main>
+    </div>
     </div>
   )
 }

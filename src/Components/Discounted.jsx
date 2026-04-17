@@ -1,6 +1,8 @@
 import React from 'react'
 import { books } from '../data'
 import Book from '../Components/UI/Book'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 export default function Discounted( )  {
   return (
    <section id="recent">
