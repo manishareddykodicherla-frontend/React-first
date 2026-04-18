@@ -12,7 +12,7 @@ export default function BookInfo( { books }) {
                         <Link to ="/books" className="book__link">
                         <FontAwesomeIcon icon={faArrowLeft} />
                         </Link>
-                        <Link to="/book" className="book__link">
+                        <Link to="/books" className="book__link">
                         <h2 className="book__selected--title--top">Books
                             </h2></Link>
                     </div>
