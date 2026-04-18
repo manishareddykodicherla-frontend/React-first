@@ -18,12 +18,12 @@ export default function Nav() {
     <div>
       <nav>
         <div className="nav__container">
-          <Link to="/books/1">
+          <Link to="/">
             <img src={Logo} alt="" className="logo" />
           </Link>
           <ul className="nav__links">
             <li className="nav__list">
-              <Link to ="/books/1" className="nav__link">
+              <Link to ="/" className="nav__link">
                 {" "}
                 Home
               </Link>

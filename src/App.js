@@ -12,8 +12,8 @@ function App() {
       <Nav/>
       <Switch >
       <Route path="/"  exact component={Home}/> 
-      <Route path="/Books" exact render={()=><Books books={books} />}/>
-      <Route path="/Books/1" render={()=><BookInfo books={books}/>}/>
+      <Route path="/books" exact render={()=><Books books={books} />}/>
+      <Route path="/books/1" render={()=><BookInfo books={books}/>}/>
       </Switch>
       <Footer/>
     </div>

@@ -5,7 +5,7 @@ import {Link } from "react-router-dom"
 export default function Book( {book}) {
   return (
     <div className="book">
-        <Link to="books/1">
+        <Link to="/books/1">
             <figure className="book__img--wrapper">
                 <img src={book.url}/>
             </figure>
