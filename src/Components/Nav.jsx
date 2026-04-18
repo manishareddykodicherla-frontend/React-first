@@ -49,10 +49,10 @@ export default function Nav() {
             </button>
             <ul className="menu__links">
               <li className="menu__list">
-                <Link to="/Home">Home</Link>
+                <Link to="/">Home</Link>
               </li>
               <li className="menu__list">
-                <Link to="/Books">Books</Link>
+                <Link to="/books">Books</Link>
               </li>
               <li className="menu__list">
                 <Link to="/cart">Cart</Link>
