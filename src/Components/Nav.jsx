@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import Logo from "../assets/Library.svg";
+import {Link } from "react-router-dom"
 import {
   faBars,
   faCartShopping,
@@ -17,29 +18,29 @@ export default function Nav() {
     <div>
       <nav>
         <div className="nav__container">
-          <a href="/">
+          <Link to="/books/1">
             <img src={Logo} alt="" className="logo" />
-          </a>
+          </Link>
           <ul className="nav__links">
             <li className="nav__list">
-              <a href="/" className="nav__link">
+              <Link to ="/books/1" className="nav__link">
                 {" "}
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav__list">
-              <a href="/books" className="nav__link">
+              <Link to="/books" className="nav__link">
                 {" "}
                 Books
-              </a>
+              </Link>
             </li>
             <button className="btn__menu" onClick={openMenu}>
               <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
             </button>
             <li className="nav__icon">
-              <a href="/cart" className="nav__link">
+              <Link to ="/cart" className="nav__link">
                 <FontAwesomeIcon icon={faCartShopping} />
-              </a>
+              </Link>
             </li>
           </ul>
           <div className="menu__backdrop">
@@ -48,13 +49,13 @@ export default function Nav() {
             </button>
             <ul className="menu__links">
               <li className="menu__list">
-                <a href="/Home">Home</a>
+                <Link to="/Home">Home</Link>
               </li>
               <li className="menu__list">
-                <a href="/Books">Books</a>
+                <Link to="/Books">Books</Link>
               </li>
               <li className="menu__list">
-                <a href="/cart">Cart</a>
+                <Link to="/cart">Cart</Link>
               </li>
             </ul>
           </div>

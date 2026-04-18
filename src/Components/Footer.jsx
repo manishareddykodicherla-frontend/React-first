@@ -1,20 +1,20 @@
 import React from 'react'
 import picture from '../assets/Library.svg'
-
+import {Link } from "react-router-dom"
 export default function Footer() {
   return (
     <footer>
         <div className="container">
             <div className="row row__column">
-                < a href="">
+                <Link to="">
                 <figure className="footer__logo">
                     <img src={picture} className="footer__logo--img" alt=""></img>
                 </figure>
-                </a>
+                </Link>
                 <div className="footer__lists">
-                    <a href="/" className="footer__link"> Home</a>
-                    <a href="/books" className="footer__link">About</a>
-                    <a href="/books" className="footer__link">Books</a>
+                    <Link  to="/" className="footer__link"> Home</Link>
+                    <Link to="/books" className="footer__link">About</Link>
+                    <Link to="/books" className="footer__link">Books</Link>
                 </div>
             </div>
         </div>
