@@ -5,7 +5,16 @@ import Home from './Pages/Home.jsx'
 import Books from './Pages/Books.jsx'
 import { books } from './data'
 import BookInfo from './Pages/BookInfo.jsx';
+import Cart from "./Pages/Cart.jsx" 
+import { useState, useEffect } from 'react';
 function App() {
+  const [cart,setCart]=useState([]);
+  function addToCart( book ){
+setCart([...cart,book]) 
+  }
+  useEffect(()=>{console.log(cart)},[cart])
+  // if u want to change anything cart (or any array) and u want to see the change 
+  //then use useEffect to see changes here to see changes in cart  
   return (
     <Router>
    <div className="App">
@@ -13,7 +22,8 @@ function App() {
       <Switch >
       <Route path="/"  exact component={Home}/> 
       <Route path="/books" exact render={()=><Books books={books} />}/>
-      <Route path="/books/:id" render={()=><BookInfo books={books}/>}/>
+      <Route path="/books/:id" render={()=><BookInfo books={books} addToCart={addToCart}/>}/>
+      <Route path="/cart" render={()=><Cart books={books}/>}/>
       </Switch>
       <Footer/>
     </div>
