@@ -7,7 +7,7 @@ import {
   faCartShopping,
   faTimes,
 } from "@fortawesome/free-solid-svg-icons";
-export default function Nav() {
+export default function Nav( numberOfItems) {
   function openMenu() {
     document.body.classList += " menu--open";
   }
@@ -41,6 +41,9 @@ export default function Nav() {
               <Link to ="/cart" className="nav__link">
                 <FontAwesomeIcon icon={faCartShopping} />
               </Link>
+              {
+             numberOfItems>0&& <span className="cart__length">{numberOfItems}</span>
+}
             </li>
           </ul>
           <div className="menu__backdrop">

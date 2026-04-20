@@ -17,7 +17,7 @@ export default function BookInfo( { books,addToCart,cart }) {
         addToCart(book)
     }
     function BookExistsOnCart(){
-       return cart.find(book => book.id=== id)
+       return cart.find(book =>+book.id=== +id)
     }
   return (
     <div id="books__body">
