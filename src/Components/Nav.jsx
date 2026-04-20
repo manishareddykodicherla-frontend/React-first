@@ -1,3 +1,5 @@
+here is the whole Nav.jsx
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import Logo from "../assets/Library.svg";
@@ -7,7 +9,7 @@ import {
   faCartShopping,
   faTimes,
 } from "@fortawesome/free-solid-svg-icons";
-export default function Nav( numberOfItems) {
+export default function Nav({ numberOfItems}) {
   function openMenu() {
     document.body.classList += " menu--open";
   }

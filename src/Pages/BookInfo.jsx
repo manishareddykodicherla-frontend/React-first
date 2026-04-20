@@ -19,7 +19,13 @@ export default function BookInfo( { books,addToCart,cart }) {
     function BookExistsOnCart(){
        return cart.find(book =>+book.id=== +id)
     }
+    function imageLoaded(){
+
+    }
   return (
+
+            
+        
     <div id="books__body">
         <main id="books__main">
             <div className="books__container">
@@ -35,7 +41,7 @@ export default function BookInfo( { books,addToCart,cart }) {
                     <div className="book__selected">
 
 <figure className="book__selected--figure">
-    <img  src={book.url} alt=""classname="book__selected--img"/>
+    <img  src={book.url} alt=""className="book__selected--img"/>
     </figure>                    
     <div className="book__selected--description">
         <h2 className="book__selected--title">
@@ -76,5 +82,6 @@ export default function BookInfo( { books,addToCart,cart }) {
             </div>
         </main>
     </div>
+    
   )
 }
