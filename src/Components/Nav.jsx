@@ -1,5 +1,3 @@
-here is the whole Nav.jsx
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import Logo from "../assets/Library.svg";

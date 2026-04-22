@@ -51,7 +51,7 @@ export default function BookInfo( { books,addToCart,cart }) {
         <div className="book__selected--price"><Price salePrice={book.salePrice} originalPrice={book.originalPrice}/>
         </div>
         <div className="book__summary">
-            <div classname="book__summary--title">
+            <div className="book__summary--title">
                 <h2>Summary</h2>
             </div>
             <p className="book__summary--para">
